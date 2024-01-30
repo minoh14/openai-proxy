@@ -120,7 +120,7 @@
         <OutArgument x:TypeArguments="x:String">[prompt]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["{ ""model"": ""gpt-4-turbo-preview"", ""messages"": [ { ""role"": ""system"", ""content"": ""You are a poet and you are in a beautiful flower garden with your fiancee."" }, { ""role"": ""user"", ""content"": ""Write a poem for your fiancee."" } ] }"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["{ ""model"": ""gpt-3.5-turbo"", ""messages"": [ { ""role"": ""system"", ""content"": ""You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."" }, { ""role"": ""user"", ""content"": ""Compose a poem that explains the concept of recursion in programming."" } ] }"]</InArgument>
       </Assign.Value>
     </Assign>
     <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" Username="{x:Null}" AcceptFormat="JSON" AuthenticationType="None" Body="[prompt]" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="False" EndPoint="https://openai.minoh.kr/proxy" sap:VirtualizedContainerService.HintSize="479,71" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="POST" Result="[response_content]" StatusCode="[response_status]" TimeoutMS="120000">
